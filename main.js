@@ -45,7 +45,7 @@ function renderHTML(data){
       if (ii == 0){
         htmlString += data[i].Module.Volume[ii];
       } else {
-        htmlString += " and " + data[i].Module.Volume[ii];
+        htmlString += " - " + data[i].Module.Volume[ii];
       }
     }
 
@@ -54,7 +54,7 @@ function renderHTML(data){
       if (ii == 0){
         htmlString += data[i].Module.weights[ii];
       } else {
-        htmlString += " and " + data[i].Module.weights[ii];
+        htmlString += " - " + data[i].Module.weights[ii];
       }
     }
     htmlString += ' , Credits ';
