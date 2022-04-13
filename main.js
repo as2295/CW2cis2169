@@ -57,8 +57,6 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.weights[ii];
       }
     }
-
-
     htmlString += ' and Credits ';
     for(ii = 0; ii < data[i].Module.Credits.length; ii++){
       if (ii == 0){
@@ -67,8 +65,14 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.Credits[ii];
       }
     }
-
-    
+    htmlString += ' and Hours ';
+    for(ii = 0; ii < data[i].Module.Hours.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.Hours[ii];
+      } else {
+        htmlString += " and " + data[i].Module.Hours[ii];
+      }
+    }
     htmlString += '.</p>';
   }
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);

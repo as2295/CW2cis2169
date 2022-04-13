@@ -7,7 +7,9 @@
       "Assignment":["CW1", "CW2"],
       "Volume":["1000 words", "4000 words"],
       "weights":["20%", "80%"],
-      "Credits":["10"]
+      "Credits":["10"],
+      "Hours":["40"]
+      
     }
   },
   {
@@ -18,7 +20,8 @@
     "Assignment":["CW1", "CW2"],
     "Volume":["1000 words", "4000 words"],
     "weights":["20%", "80%"],
-    "Credits":["10"]
+    "Credits":["10"],
+    "Hours":["40"]
     }
   },
   {
@@ -29,7 +32,8 @@
       "Assignment":["CW1", "CW2"],
       "Volume":["1000 words", "4000 words"],
       "weights":["20%", "80%"],
-      "Credits":["10"]
+      "Credits":["10"],
+      "Hours":["40"]
     }
     
   }
