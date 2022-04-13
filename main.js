@@ -4,7 +4,7 @@ var btn = document.getElementById("btn");
 
 btn.addEventListener("click", function(){
   var ourRequest = new XMLHttpRequest();
-  ourRequest.open('GET', 'https://raw.githubusercontent.com/profharimohanpandey/CW2/master/module-'+ pageCounter +'.json');
+  ourRequest.open('GET', 'https://raw.githubusercontent.com/as2295/CW2cis2169/master/module-'+ pageCounter +'.json');
   ourRequest.onload = function(){
     //console.log(ourRequest.responseText);
     var ourData = JSON.parse(ourRequest.responseText);
@@ -57,6 +57,8 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.weights[ii];
       }
     }
+
+    
     htmlString += '.</p>';
   }
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);
