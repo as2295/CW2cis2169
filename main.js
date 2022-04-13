@@ -58,6 +58,16 @@ function renderHTML(data){
       }
     }
 
+
+    htmlString += ' and Credits ';
+    for(ii = 0; ii < data[i].Module.Credits.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.Credits[ii];
+      } else {
+        htmlString += " and " + data[i].Module.Credits[ii];
+      }
+    }
+
     
     htmlString += '.</p>';
   }
