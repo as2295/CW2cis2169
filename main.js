@@ -170,7 +170,7 @@ function renderHTML(data){
     
     htmlString += '.</p>';
   }
-  moduleContainer.insertAdjacentHTML('beforeend', htmlString);
+  moduleContainer.insertAdjacentHTML('afterend', htmlString);
 
 }
 
