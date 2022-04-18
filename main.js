@@ -1,6 +1,7 @@
 var pageCounter = 1;
 var moduleContainer = document.getElementById('module-info');
 var btn = document.getElementById("btn");
+var butn = document.getElementById("butn");
 
 btn.addEventListener("click", function(){
   var ourRequest = new XMLHttpRequest();
@@ -88,7 +89,7 @@ function renderHTML(data){
 
 }
 
-btn.addEventListener("click", function(){
+butn.addEventListener("click", function(){
   var ourRequest = new XMLHttpRequest();
   ourRequest.open('GET', 'https://raw.githubusercontent.com/as2295/CW2cis2169/master/module-'+ pageCounter +'.json');
   ourRequest.onload = function(){
@@ -101,7 +102,7 @@ btn.addEventListener("click", function(){
 pageCounter++;
 if (pageCounter > 3){
 //btn.classList.add("hide-me");
-  btn.disabled = true;
+  butn.disabled = true;
 }
 });
 
