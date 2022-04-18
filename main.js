@@ -23,7 +23,7 @@ function renderHTML(data){
   var htmlString = "";
 
   for(i = 0; i < data.length; i++){
-    htmlString += "<p>" + data[i].Name + " is a " + data[i].Course + " has assements "; //".</p>";
+    htmlString += "<p>" + data[i].Name + " is  " + data[i].Course + " it has assements "; //".</p>";
     for(ii = 0; ii < data[i].Module.Assignment.length; ii++){
       if (ii == 0){
         htmlString += data[i].Module.Assignment[ii];
@@ -73,8 +73,18 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.Hours[ii];
       }
     }
+    htmlString += ' and modules ';
+    for(ii = 0; ii < data[i].Module.modules.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.modules[ii];
+      } else {
+        htmlString += " and " + data[i].Module.modules[ii];
+      }
+    }
+    
     htmlString += '.</p>';
   }
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 
 }
+
