@@ -90,11 +90,11 @@ function renderHTML(data){
 }
 
 function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
+  var x = document.getElementById("none");
+  if (x.style.display === "myDIV") {
     x.style.display = "block";
   } else {
-    x.style.display = "none";
+    x.style.display = "myDIV";
   }
 }
 
