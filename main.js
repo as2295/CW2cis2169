@@ -90,9 +90,38 @@ function renderHTML(data){
 }
 
 
-document.getElementById("butn").addEventListener("click", myFunction);
+var myObject = {
+  "catalogo": [{
+      "id": "001",
+      "name": "Nike",
+      "desc": "shoes",
+      "price": 500,
+    },
+    {
+      "id": "002",
+      "name": "MIKEY",
+      "desc": "shoes",
+      "price": 500,
+    },
+    {
+      "id": "003",
+      "name": "VANS",
+      "desc": "shoes",
+      "price": 500,
+    },
+    {
+      "id": "004",
+      "name": "SPORT",
+      "desc": "shoes",
+      "price": 500,
+    }
+  ]
+};
 
-function myFunction() {
-  document.getElementById("butn").innerHTML = "1098, Javascript, 3 hours, pass-good-verygood,40.", "1098, Javascript, 3 hours, pass-good-verygood,40."
-  ;
+function showRandom() {
+
+  var random = myObject.catalogo[Math.floor(Math.random() * myObject.catalogo.length)];
+  
+  document.querySelector('.line').innerHTML = random.name + "<br>" + "$" + random.price + ".00";
+
 }
