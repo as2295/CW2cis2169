@@ -89,39 +89,90 @@ function renderHTML(data){
 
 }
 
+btn.addEventListener("click", function(){
+  var ourRequest = new XMLHttpRequest();
+  ourRequest.open('GET', 'https://raw.githubusercontent.com/as2295/CW2cis2169/master/module-'+ pageCounter +'.json');
+  ourRequest.onload = function(){
+    //console.log(ourRequest.responseText);
+    var ourData = JSON.parse(ourRequest.responseText);
+    //console.log(ourData[0]);
+    renderHTML(ourData);
+  };
+  ourRequest.send();
+pageCounter++;
+if (pageCounter > 3){
+//btn.classList.add("hide-me");
+  btn.disabled = true;
+}
+});
 
-var myObject = {
-  "catalogo": [{
-      "id": "001",
-      "name": "Nike",
-      "desc": "shoes",
-      "price": 500,
-    },
-    {
-      "id": "002",
-      "name": "MIKEY",
-      "desc": "shoes",
-      "price": 500,
-    },
-    {
-      "id": "003",
-      "name": "VANS",
-      "desc": "shoes",
-      "price": 500,
-    },
-    {
-      "id": "004",
-      "name": "SPORT",
-      "desc": "shoes",
-      "price": 500,
+function renderHTML(data){
+  var htmlString = "";
+
+  for(i = 0; i < data.length; i++){
+    htmlString += "<p>" + data[i].Name + " is  " + data[i].Course + " it has assements "; //".</p>";
+    for(ii = 0; ii < data[i].Module.Assignment.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.Assignment[ii];
+      } else {
+        htmlString += " and " + data[i].Module.Assignment[ii];
+      }
     }
-  ]
-};
+    htmlString += ' , Learning Outcome ';
+    for(ii = 0; ii < data[i].Module.Learning_outcomes.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.Learning_outcomes[ii];
+      } else {
+        htmlString += " and " + data[i].Module.Learning_outcomes[ii];
+      }
+    }
 
-function showRandom() {
+    htmlString += ' , Volume ';
+    for(ii = 0; ii < data[i].Module.Volume.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.Volume[ii];
+      } else {
+        htmlString += " - " + data[i].Module.Volume[ii];
+      }
+    }
 
-  var random = myObject.catalogo[Math.floor(Math.random() * myObject.catalogo.length)];
-  
-  document.querySelector('.line').innerHTML = random.name + "<br>" + "$" + random.price + ".00";
+    htmlString += ' , weights ';
+    for(ii = 0; ii < data[i].Module.weights.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.weights[ii];
+      } else {
+        htmlString += " - " + data[i].Module.weights[ii];
+      }
+    }
+    htmlString += ' , Credits ';
+    for(ii = 0; ii < data[i].Module.Credits.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.Credits[ii];
+      } else {
+        htmlString += " and " + data[i].Module.Credits[ii];
+      }
+    }
+    htmlString += ' , Hours ';
+    for(ii = 0; ii < data[i].Module.Hours.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.Hours[ii];
+      } else {
+        htmlString += " and " + data[i].Module.Hours[ii];
+      }
+    }
+    htmlString += ' and modules ';
+    for(ii = 0; ii < data[i].Module.modules.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.modules[ii];
+      } else {
+        htmlString += " and " + data[i].Module.modules[ii];
+      }
+    }
+    
+    htmlString += '.</p>';
+  }
+  moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 
 }
+
+
