@@ -1,41 +1,44 @@
 [
   {
     "Name": "Undergraduate",
+    "id": "0098",
     "Course":"Web Development",
     "Module": {
       "Learning_outcomes":["LO1", "LO2"],
       "Assignment":["CW1", "CW2"],
       "Volume":["1000 words", "4000 words"],
       "weights":["20%", "80%"],
-      "Credits":["10"],
+      "Credits":["120"],
       "Hours":["40"],
-      "modules": ["one or more"]
+      "Academic": ["Dave Walsh"]
     }
   },
   {
     "Name": "Post-Graduate",
+    "id": "0098",
     "Course":"Big Data",
     "Module": {
     "Learning_outcomes":["LO1", "LO2"],
     "Assignment":["CW1", "CW2"],
     "Volume":["1000 words", "4000 words"],
     "weights":["20%", "80%"],
-    "Credits":["10"],
+    "Credits":["120"],
     "Hours":["40"],
-    "modules": ["one or more"]
+    "Academic": ["Hari Pandey"]
     }
   },
   {
     "Name": "Research",
+    "id": "0098",
     "Course":"Data Mining",
     "Module": {
       "Learning_outcomes":["LO1", "LO2"],
       "Assignment":["CW1", "CW2"],
       "Volume":["1000 words", "4000 words"],
       "weights":["20%", "80%"],
-      "Credits":["10"],
+      "Credits":["120"],
       "Hours":["40"],
-      "modules": ["one or more"]
+      "Academic": ["Matthew Bean"]
     }
     
   }

@@ -74,12 +74,12 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.Hours[ii];
       }
     }
-    htmlString += ' and modules ';
-    for(ii = 0; ii < data[i].Module.modules.length; ii++){
+    htmlString += ' and Academic ';
+    for(ii = 0; ii < data[i].Module.Academic.length; ii++){
       if (ii == 0){
-        htmlString += data[i].Module.modules[ii];
+        htmlString += data[i].Module.Academic[ii];
       } else {
-        htmlString += " and " + data[i].Module.modules[ii];
+        htmlString += " and " + data[i].Module.Academic[ii];
       }
     }
     
@@ -88,6 +88,15 @@ function renderHTML(data){
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 
 }
+    htmlString += ' and id ';
+    for(ii = 0; ii < data[i].Module.id.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.id[ii];
+      } else {
+        htmlString += " and " + data[i].Module.id[ii];
+      }
+    }
+    
 
 function toggleText(){
   var x = document.getElementById("Myid");
