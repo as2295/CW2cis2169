@@ -89,13 +89,6 @@ function renderHTML(data){
 
 }
 
-function myFunction() {
-  var x = document.getElementById("none");
-  if (x.style.display === "myDIV") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "myDIV";
-  }
-}
+
 
 
