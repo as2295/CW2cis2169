@@ -88,3 +88,20 @@ function renderHTML(data){
 
 }
 
+btn.addEventListener("click", function(){
+  var ourRequest = new XMLHttpRequest();
+  ourRequest.open('GET', 'https://raw.githubusercontent.com/as2295/CW2cis2169/master/module-'+ pageCounter +'.json');
+  ourRequest.onload = function(){
+    //console.log(ourRequest.responseText);
+    var ourData = JSON.parse(ourRequest.responseText);
+    //console.log(ourData[0]);
+    renderHTML(ourData);
+  };
+  ourRequest.send();
+pageCounter++;
+if (pageCounter > 3){
+//btn.classList.add("hide-me");
+  btn.disabled = true;
+}
+});
+
