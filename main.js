@@ -93,5 +93,6 @@ function renderHTML(data){
 document.getElementById("butn").addEventListener("click", myFunction);
 
 function myFunction() {
-  document.getElementById("butn").innerHTML = "YOU CLICKED ME!";
+  document.getElementById("butn").innerHTML = "1098, Javascript, 3 hours, pass-good-verygood,40.", "1098, Javascript, 3 hours, pass-good-verygood,40."
+  ;
 }
