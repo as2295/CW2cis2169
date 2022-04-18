@@ -82,14 +82,6 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.Academic[ii];
       }
     }
-    htmlString += ' and id ';
-    for(ii = 0; ii < data[i].Module.id.length; ii++){
-      if (ii == 0){
-        htmlString += data[i].Module.id[ii];
-      } else {
-        htmlString += " and " + data[i].Module.id[ii];
-      }
-    }
     
     htmlString += '.</p>';
   }
