@@ -90,4 +90,8 @@ function renderHTML(data){
 }
 
 
- 
+document.getElementById("butn").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("butn").innerHTML = "YOU CLICKED ME!";
+}
