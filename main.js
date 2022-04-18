@@ -75,7 +75,7 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.Hours[ii];
       }
     }
-    htmlString += ' and Academic ';
+    htmlString += ' and Academic leader ';
     for(ii = 0; ii < data[i].Module.Academic.length; ii++){
       if (ii == 0){
         htmlString += data[i].Module.Academic[ii];
