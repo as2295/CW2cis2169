@@ -32,14 +32,7 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.Assignment[ii];
       }
     }
-    htmlString += ' and id ';
-    for(ii = 0; ii < data[i].Module.id.length; ii++){
-      if (ii == 0){
-        htmlString += data[i].Module.id[ii];
-      } else {
-        htmlString += " and " + data[i].Module.id[ii];
-      }
-    }
+    
     htmlString += ' , Learning Outcome ';
     for(ii = 0; ii < data[i].Module.Learning_outcomes.length; ii++){
       if (ii == 0){
@@ -49,12 +42,12 @@ function renderHTML(data){
       }
     }
 
-    htmlString += ' , Volume ';
-    for(ii = 0; ii < data[i].Module.Volume.length; ii++){
+    htmlString += ' , ID ';
+    for(ii = 0; ii < data[i].Module.ID.length; ii++){
       if (ii == 0){
-        htmlString += data[i].Module.Volume[ii];
+        htmlString += data[i].Module.ID[ii];
       } else {
-        htmlString += " - " + data[i].Module.Volume[ii];
+        htmlString += " - " + data[i].Module.ID[ii];
       }
     }
 
