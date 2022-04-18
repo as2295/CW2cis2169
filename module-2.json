@@ -9,7 +9,7 @@
       "weights":["20%", "80%"],
       "Credits":["10"],
       "Hours":["40"],
-      "modules": ["all"]
+      "modules": ["one or more"]
     }
   },
   {
@@ -22,7 +22,7 @@
     "weights":["20%", "80%"],
     "Credits":["10"],
     "Hours":["40"],
-    "modules": ["all"]
+    "modules": ["one or more"]
     }
   },
   {
@@ -35,7 +35,7 @@
       "weights":["20%", "80%"],
       "Credits":["10"],
       "Hours":["40"],
-      "modules": ["all"]
+      "modules": ["one or more"]
     }
     
   }

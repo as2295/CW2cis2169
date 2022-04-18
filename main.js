@@ -65,7 +65,7 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.Credits[ii];
       }
     }
-    htmlString += ' and Hours ';
+    htmlString += ' , Hours ';
     for(ii = 0; ii < data[i].Module.Hours.length; ii++){
       if (ii == 0){
         htmlString += data[i].Module.Hours[ii];
