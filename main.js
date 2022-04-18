@@ -82,12 +82,6 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.Academic[ii];
       }
     }
-    
-    htmlString += '.</p>';
-  }
-  moduleContainer.insertAdjacentHTML('beforeend', htmlString);
-
-}
     htmlString += ' and id ';
     for(ii = 0; ii < data[i].Module.id.length; ii++){
       if (ii == 0){
@@ -96,6 +90,13 @@ function renderHTML(data){
         htmlString += " and " + data[i].Module.id[ii];
       }
     }
+    
+    htmlString += '.</p>';
+  }
+  moduleContainer.insertAdjacentHTML('beforeend', htmlString);
+
+}
+   
     
 
 function toggleText(){
