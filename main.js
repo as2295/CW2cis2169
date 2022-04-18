@@ -24,12 +24,12 @@ function renderHTML(data){
   var htmlString = "";
 
   for(i = 0; i < data.length; i++){
-    htmlString += "<p>" + data[i].Name + " is  " + data[i].Course + " it has assements "; //".</p>";
-    for(ii = 0; ii < data[i].Module.Assignment.length; ii++){
+    htmlString += "<p>" + data[i].Name + " is  " + data[i].Course + " it has Assessments "; //".</p>";
+    for(ii = 0; ii < data[i].Module.Assessment.length; ii++){
       if (ii == 0){
-        htmlString += data[i].Module.Assignment[ii];
+        htmlString += data[i].Module.Assessment[ii];
       } else {
-        htmlString += " and " + data[i].Module.Assignment[ii];
+        htmlString += " and " + data[i].Module.Assessment[ii];
       }
     }
     

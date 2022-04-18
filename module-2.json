@@ -4,7 +4,7 @@
     "Course":"Web Development",
     "Module": {
       "Learning_outcomes":["LO1", "LO2"],
-      "Assignment":["CW1", "CW2"],
+      "Assessment":["CW1, volume 1,000", "CW2, volume 2,500"],
       "ID":["0097"],
       "weights":["20%", "80%"],
       "Credits":["120"],
@@ -17,7 +17,7 @@
     "Course":"Big Data",
     "Module": {
     "Learning_outcomes":["LO1", "LO2"],
-    "Assignment":["CW1", "CW2"],
+    "Assessment":["CW1, volume 1,000", "CW2, volume 2,500"],
     "ID":["0098"],
     "weights":["20%", "80%"],
     "Credits":["120"],
@@ -30,7 +30,7 @@
     "Course":"Data Mining",
     "Module": {
       "Learning_outcomes":["LO1", "LO2"],
-      "Assignment":["CW1", "CW2"],
+      "Assessment":["CW1, volume 1,000", "CW2, volume 2,500"],
       "ID":["0099"],
       "weights":["20%", "80%"],
       "Credits":["120"],
