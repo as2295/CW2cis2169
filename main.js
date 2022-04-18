@@ -168,9 +168,9 @@ function renderHTML(data){
       }
     }
     
-    
+    htmlString += '.</p>';
   }
-  
+  moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 
 }
 
