@@ -101,4 +101,12 @@ function toggleText(){
   }
 }
 
+function display(){
+
+
+	var post = document.getElementById("userInput").value;
+
+document.getElementById("printhere").innerHTML = post;
+
+}
 
