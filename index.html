@@ -22,7 +22,7 @@
 
 <button id ="btn">Fetch information about current modules</button> 
 
-<h4>Add Module</h4>
+<h2>Add Module</h2>
 <p>Please enter identification code, name,
   number of hours, learning outcomes, and number of credits. </p>
 
@@ -39,13 +39,13 @@
 
 
 
-        <h3>Current Degrees</h3>
+        <h2>Current Degrees</h2>
         <p id="Myid">1180, Computer Science, L01 and L02, Exit award if 50% credits gained.<br>1181, Computer Architecture, L01 and L02, Exit award if 50% credits gained.<br>1182, Website Design and Development, L01 and L02, Exit award if 50% credits gained. </p>
         <button onclick="toggleText()">Hide/Show current Degrees </button>
 
-        <h5>Add Degree</h5>
-<p>Please enter identification code, name,
-  number of hours, learning outcomes, and number of credits. </p>
+        <h2>Add Degree</h2>
+<p>Please enter identification code, name, exit awards and learning
+  outcomes </p>
 
 <p id="printthere"></p>
            <label for="dname">Degree info:</label>
@@ -53,7 +53,19 @@
            
            
 
-        <button  onclick="show()">add degree</button>
+        <button  onclick="show()">add degree</button> <br>
+
+        <h2>Add assessment date</h2
+          
+        
+        <p>Please enter assessment date: </p>
+        <p id="printere"></p>
+        <label for="adate">Degree info:</label>
+           <input type="date" id="userput" name="adate">
+
+           <button  onclick="see()">add degree</button> <br>
+
+
 
   
 

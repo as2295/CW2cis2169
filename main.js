@@ -117,4 +117,12 @@ function show(){
 document.getElementById("printthere").innerHTML = post;
 
 }
+function see(){
+
+
+	var post = document.getElementById("userput").value;
+
+document.getElementById("printere").innerHTML = post;
+
+}
 
