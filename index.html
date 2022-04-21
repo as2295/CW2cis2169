@@ -22,18 +22,38 @@
 
 <button id ="btn">Fetch information about current modules</button> 
 
-
-<button onclick="toggleText()">Hide/Show current Degrees </button>
-<h3>Current Degrees</h3>
-<p id="Myid">1180, Computer Science, L01 and L02, Exit award if 50% credits gained.<br>1181, Computer Architecture, L01 and L02, Exit award if 50% credits gained.<br>1182, Website Design and Development, L01 and L02, Exit award if 50% credits gained. </p>
-
-
 <h4>Add Module</h4>
+<p>Please enter identification code, name,
+  number of hours, learning outcomes, and number of credits. </p>
 
 <p id="printhere"></p>
-        <TEXTAREA Name="content" ROWS="5" COLS="20" id = "userInput"></TEXTAREA>
+           <label for="mname">Module info:</label>
+           <input type="text" id="userInput" name="mname">
+           
+           
 
-        <button  onclick="display()">post</button>
+        <button  onclick="display()">add module</button> <br><br><br><br>
+
+
+  
+
+
+
+        <h3>Current Degrees</h3>
+        <p id="Myid">1180, Computer Science, L01 and L02, Exit award if 50% credits gained.<br>1181, Computer Architecture, L01 and L02, Exit award if 50% credits gained.<br>1182, Website Design and Development, L01 and L02, Exit award if 50% credits gained. </p>
+        <button onclick="toggleText()">Hide/Show current Degrees </button>
+
+        <h5>Add Degree</h5>
+<p>Please enter identification code, name,
+  number of hours, learning outcomes, and number of credits. </p>
+
+<p id="printthere"></p>
+           <label for="dname">Degree info:</label>
+           <input type="text" id="userImput" name="dname">
+           
+           
+
+        <button  onclick="show()">add degree</button>
 
   
 

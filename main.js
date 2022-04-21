@@ -109,4 +109,12 @@ function display(){
 document.getElementById("printhere").innerHTML = post;
 
 }
+function show(){
+
+
+	var post = document.getElementById("userImput").value;
+
+document.getElementById("printthere").innerHTML = post;
+
+}
 
