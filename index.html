@@ -2,12 +2,12 @@
 <head>
   <meta name ="viewport" content="width=device-width, initial-scale=1"/>
     <title>Coursework2_WebApp</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="main.css">
   </head>
 <body>
 
   <header>
-    <h1>Academic management and tracking application </h1>
+    <h1>Academic Management and Tracking Application </h1>
     <h2>Current Modules</h2>
     
     
@@ -23,7 +23,7 @@
 <button id ="btn">Fetch information about current modules</button> 
 
 <h2>Add Module</h2>
-<p>Please enter identification code, name,
+<p>Please enter new module identification code, which degree id's will run the module, name,
   number of hours, learning outcomes, and number of credits. </p>
 
 <p id="printhere"></p>
@@ -32,7 +32,7 @@
            
            
 
-        <button  onclick="display()">add module</button> <br><br><br><br>
+        <button  onclick="display()">Add Module</button> <br><br><br><br>
 
 
   
@@ -44,7 +44,7 @@
         <button onclick="toggleText()">Hide/Show current Degrees </button>
 
         <h2>Add Degree</h2>
-<p>Please enter identification code, name, exit awards and learning
+<p>Please enter new Degree id, chosen module id's, name, exit awards and learning
   outcomes </p>
 
 <p id="printthere"></p>
@@ -53,17 +53,32 @@
            
            
 
-        <button  onclick="show()">add degree</button> <br>
+        <button  onclick="show()">Add Degree</button> <br>
 
-        <h2>Add assessment date</h2
+        <h2>Add Assessment Date</h2
           
         
-        <p>Please enter assessment date: </p>
+        <p>Please enter Assessment module id and date: </p>
         <p id="printere"></p>
-        <label for="adate">Degree info:</label>
+        <label for="mname">Module id:</label>
+        <input type="text" id="userImput" name="aname">
+        <label for="adate">Assessment date:</label>
            <input type="date" id="userput" name="adate">
 
-           <button  onclick="see()">add degree</button> <br>
+           <button  onclick="see()">Schedule Assessment</button> <br>
+
+
+           <h2>Schedule module time-slots </h2
+          
+        
+            <p>Please enter module time-slot: </p>
+            <p id="printit"></p>
+            <label for="mname">Module id:</label>
+            <input type="text" id="user" name="aslot">
+            <label for="adate">Module time-slots:</label>
+               <input type="datetime-local" id="userut" name="aslot">
+    
+               <button  onclick="appear()">Schedule time-slot</button> <br>
 
 
 

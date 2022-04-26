@@ -125,4 +125,12 @@ function see(){
 document.getElementById("printere").innerHTML = post;
 
 }
+function appear(){
+
+
+	var post = document.getElementById("userut").value;
+
+document.getElementById("printit").innerHTML = post;
+
+}
 
