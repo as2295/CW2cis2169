@@ -2,12 +2,14 @@
 <head>
   <meta name ="viewport" content="width=device-width, initial-scale=1"/>
     <title>Coursework2_WebApp</title>
+  <! –– created and linked css page ––>
     <link rel="stylesheet" href="main.css">
   </head>
 <body>
 
   <header>
     <h1>Academic Management and Tracking Application </h1>
+    <! –– created heading ––>
     <h2>Current Modules</h2>
     
     
@@ -19,19 +21,20 @@
     
 
 </div>
-
+<! –– button fetches info on modules ––>
 <button id ="btn">Fetch information about current modules</button> 
 
 <h2>Add Module</h2>
 <p>Please enter new module identification code, which degree id's will run the module, name,
   number of hours, learning outcomes, and number of credits. </p>
-
+  
+<! –– here the input has been coded ––>
 <p id="printhere"></p>
            <label for="mname">Module info:</label>
            <input type="text" id="userInput" name="mname">
            
            
-
+<! –– the button below shows the input on the page ––>
         <button  onclick="display()">Add Module</button> <br><br><br><br>
 
 
@@ -41,6 +44,7 @@
 
         <h2>Current Degrees</h2>
         <p id="Myid">1180, Computer Science, L01 and L02, Exit award if 50% credits gained.<br>1181, Computer Architecture, L01 and L02, Exit award if 50% credits gained.<br>1182, Website Design and Development, L01 and L02, Exit award if 50% credits gained. </p>
+  <! –– the button below has been created to show/hide the text when user requires ––>
         <button onclick="toggleText()">Hide/Show current Degrees </button>
 
         <h2>Add Degree</h2>
@@ -63,7 +67,9 @@
         <label for="mname">Module id:</label>
         <input type="text" id="userImput" name="aname">
         <label for="adate">Assessment date:</label>
+  <! –– the code below allows user to input a date they want ––>
            <input type="date" id="userput" name="adate">
+  <! –– the button below shows the input from the user ––>
 
            <button  onclick="see()">Schedule Assessment</button> <br>
 
@@ -76,13 +82,14 @@
             <label for="mname">Module id:</label>
             <input type="text" id="user" name="aslot">
             <label for="adate">Module time-slots:</label>
+  <! –– the code below allows user to input the date and time they want ––>
                <input type="datetime-local" id="userut" name="aslot">
     
                <button  onclick="appear()">Schedule time-slot</button> <br>
 
 
 
-  
+  <! –– the code below links the file to the javascript file ––>
 
   <script src="main.js"></script>
 </body>
