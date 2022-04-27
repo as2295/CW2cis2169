@@ -1,14 +1,14 @@
 var pageCounter = 1;
 var moduleContainer = document.getElementById('module-info');
-var btn = document.getElementById("btn");
-var butn = document.getElementById("butn");
+var btn = document.getElementById("btn"); //declares btn as variable
+var butn = document.getElementById("butn"); //declares butn as variable
 
-btn.addEventListener("click", function(){
+btn.addEventListener("click", function(){ //buttons function
   var ourRequest = new XMLHttpRequest();
   ourRequest.open('GET', 'https://raw.githubusercontent.com/as2295/CW2cis2169/master/module-'+ pageCounter +'.json');
   ourRequest.onload = function(){
     //console.log(ourRequest.responseText);
-    var ourData = JSON.parse(ourRequest.responseText);
+    var ourData = JSON.parse(ourRequest.responseText); //retriving date from the json file
     //console.log(ourData[0]);
     renderHTML(ourData);
   };
@@ -22,7 +22,7 @@ if (pageCounter > 3){
 
 function renderHTML(data){
   var htmlString = "";
-
+//how the data from the json is added
   for(i = 0; i < data.length; i++){
     htmlString += "<p>" + data[i].Name + " is  " + data[i].Course + " it has Assessments "; //".</p>";
     for(ii = 0; ii < data[i].Module.Assessment.length; ii++){
@@ -91,7 +91,7 @@ function renderHTML(data){
 }
    
     
-
+//allows the degrees to be shown or hidden
 function toggleText(){
   var x = document.getElementById("Myid");
   if (x.style.display === "none") {
@@ -100,7 +100,7 @@ function toggleText(){
     x.style.display = "none";
   }
 }
-
+//allows user to input and add information to the html page
 function display(){
 
 
