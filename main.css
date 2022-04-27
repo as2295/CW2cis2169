@@ -1,3 +1,4 @@
+/* this styles the main title*/
 h1 {
     color:blue;
     font-family: arial, sans-serif;
@@ -7,7 +8,7 @@ h1 {
     margin-bottom: 1px;
     text-align: center;
     }
-
+/* this styles the headings*/
     h2 {
         color: navy;
         
